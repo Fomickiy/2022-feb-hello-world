@@ -1,0 +1,21 @@
+.sidepanel{
+  position: absolute;
+  top: 342px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 318px;
+  &__text{
+    height: 20px;
+    width: 20px;
+    span{
+      transform: rotate(-90deg);
+      display: block;
+      width: 20px;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}

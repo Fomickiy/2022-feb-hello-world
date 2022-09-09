@@ -1,0 +1,47 @@
+.brands {
+  padding: 100px 0 25px 0;
+  background-color: #fff;
+  &__dot {
+    &-1{
+      top: 8px;
+      left: 420px;
+    }
+    &-2 {
+      bottom: -10px;
+      left: 645px;
+    }
+  }
+  &__title{
+    position: relative;
+      font-size: 54px;
+      letter-spacing: 12px;
+      color: #000;
+      font-weight: 300;
+  }
+  &__subtitle{
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: #000;
+    font-weight: 300;
+  }
+  &__slider{
+    margin-top: 145px;
+    .slick{
+      &-dots{
+        button{
+          background-color: #000;
+        }
+      }
+      &-active{
+        button{
+          background-color: #f110ba;
+        }
+      }
+    }
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

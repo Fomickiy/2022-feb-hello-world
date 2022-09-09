@@ -1,0 +1,41 @@
+.benefits{
+  padding: 155px 0 140px 0;
+  &__dot {
+    &-1{
+      top: 27px;
+      left: 457px;
+    }
+    &-2 {
+      bottom: 15px;
+      left: 320px;
+    }
+  }
+  &__title{
+    position: relative;
+      font-size: 54px;
+      letter-spacing: 12px;
+      color: #fff;
+      font-weight: 300;
+  }
+  &__items{
+    margin-top: 120px;
+    display: grid;
+    grid-template: repeat(2, minmax(200px, auto)) / repeat(3, 415px);
+    grid-auto-rows: minmax(200px, auto);
+    column-gap: 65px;
+    row-gap: 100px;
+  }
+  &__item{
+    &-title{
+      margin-top: 33px;
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+    }
+    &-text{
+      margin-top: 35px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}

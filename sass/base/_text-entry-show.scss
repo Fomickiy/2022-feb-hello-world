@@ -1,0 +1,12 @@
+.text-entry {
+    transition: all 1.5s;
+
+    /* Hide an element in the initial state */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.text-entry.show {
+    opacity: 1;
+    transform: translateY(0%);
+}

@@ -1,0 +1,79 @@
+.mission {
+  background: url('../img/mission/space_bg.png') no-repeat 50%/cover;
+  margin-top: 21px;
+
+  &__dot{
+    &-1{
+      top: 345px;
+      right: 535px;
+    }
+    &-2{
+      top: 460px;
+      right: -120px;
+    }
+    &-3{
+      top: 655px;
+      right: 480px;
+    }
+    &-4{
+      bottom: 360px;
+      left:  -115px;
+    }
+    &-5{
+      bottom: 220px;
+      left: 250px;
+    }
+  }
+  .container {
+    padding: 255px 0 220px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  &__wrapper {
+    width: 50%;
+    &:nth-last-child(1) {
+      margin-left: 243px;
+    }
+  }
+  &__img {
+    position: absolute;
+    z-index: -1;
+    top: 233px;
+    left: -171px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    letter-spacing: 12px;
+    font-weight: 300;
+    color: #485375;
+  }
+  &__title {
+    margin-top: 46px;
+    margin-top: 43px;
+    font-size: 54px;
+    letter-spacing: 12px;
+    color: #fff;
+    font-weight: 300;
+  }
+  &__descr  {
+    margin-top: 70px;
+    width: 459px;
+    height: 168px;
+    background-color: #141476;
+    border-radius: 10px;
+    p {
+      padding-top: 45px;
+      padding-left: 74px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  &__text {
+    margin-top: 80px;
+    p {
+      margin: 0;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}

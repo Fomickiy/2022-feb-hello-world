@@ -1,0 +1,36 @@
+.AR{
+  background: url('../img/AR/AR__bg.png') no-repeat 50%/cover;
+  .container{
+    padding: 150px 0 160px 0;
+  }
+  &__dot {
+    &-1{
+      top: -20px;
+      right: 300px;
+    }
+    &-2{
+      top: 120px;
+      left: 600px;
+    }
+    &-3{
+      bottom: 175px;
+      left: -175px;
+    }
+    &-4{
+      bottom: -10px;
+      left: 470px;
+    }
+  }
+  &__title {
+    font-size: 54px;
+    letter-spacing: 12px;
+    color: #fff;
+    font-weight: 300;
+  }
+  &__descr {
+    width: 455px;
+    margin-top: 57px;
+      font-size: 20px;
+      color: #fff;
+  }
+}

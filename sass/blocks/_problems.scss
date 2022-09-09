@@ -1,0 +1,38 @@
+.functionality{
+  padding: 155px 0 140px 0;
+  background: url('../img/mission/space_bg.png') no-repeat 50%/cover;
+  &__dot {
+    &-1{
+      top: 25px;
+      left: 450px;
+    }
+    &-2 {
+      bottom: 0px;
+      left: 635px;
+    }
+  }
+  &__title{
+    position: relative;
+      font-size: 54px;
+      letter-spacing: 12px;
+      color: #fff;
+      font-weight: 300;
+  }
+  &__slider{
+    margin-top: 145px;
+  }
+  &__item{
+    padding: 0 24px;
+    min-height: 140px;
+    &-title{
+      font-size: 30px;
+      font-weight: bold;
+      color:#fff;
+    }
+    &-text{
+      margin-top: 30px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}

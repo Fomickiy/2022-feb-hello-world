@@ -1,0 +1,88 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px) rotate(24deg);
+  }
+  50% {
+    transform: translatey(-26px) rotate(32deg);
+  }
+  100% {
+    transform: translatey(0px) rotate(24deg);
+  }
+}
+
+@keyframes floatStar {
+  0% {
+    transform: translatex(0px) rotate(24deg);
+  }
+  40% {
+    transform: translatey(-26px) rotate(32deg);
+  }
+	70% {
+		transform: translatex(-15px) rotate(32deg);
+	}
+  100% {
+    transform: translatex(-0px) rotate(24deg);
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+	100% { opacity: 0.3; }
+}
+
+@keyframes pulseMiniItems {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+	100% { opacity: 1; }
+}
+
+@keyframes circle1 {
+	to {
+		transform: rotate(0deg);
+	}
+	from {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes circle2 {
+	to {
+		transform: rotate(360deg);
+	}
+	from {
+		transform: rotate(0deg);
+	}
+}
+
+
+@keyframes showInMenu {
+	0% {
+		width: 0;
+	}
+	
+	100% {
+		width: 70%;
+	}
+}
+
+
+@keyframes showOutMenu {
+	0% {
+		width: 75%;
+	}
+	
+	100% {
+		width: 0;
+	}
+}
+
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}

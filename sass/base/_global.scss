@@ -1,0 +1,241 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul[class] {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a :focus {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input {
+  border: unset;
+}
+input,
+textarea {
+  border: unset;
+  background: transparent;
+}
+button {
+  background: transparent;
+  padding: unset;
+  cursor: pointer;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-color: #060e28;
+  color: #fff;
+  line-height: 1.2;
+	z-index: -101;
+	.locked {
+		overflow: hidden;
+	}
+	
+}
+
+body {
+	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+	position: relative;
+  flex: auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+.background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-image: url("../img/mission/space_bg.png");
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	opacity: 0.7;
+	z-index: -100;
+}
+
+//containers style
+.container {
+  max-width: 1410px;
+  padding: 0 15px;
+  margin: 0 auto;
+	@media(max-width: 1299.98px) {
+		max-width: 1170px;
+	}
+}
+
+//btn setting
+.btn {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 1.28px;
+  color: #ffffff;
+  box-shadow: -29px 2px 103px rgba(62, 220, 255, 0.27);
+  border-radius: 10px;
+  background-color: #006a87;
+  background-image: linear-gradient(-264deg, #00d1fc 0%, #008abb 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  & > .btn-span {
+    position: relative;
+    z-index: 1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #006a87;
+    background-image: linear-gradient(-264deg, #04adce 0%, #0e6d90 100%);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+//title all section
+.title {
+  font-size: 54px;
+  font-weight: 300;
+  letter-spacing: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  @media (max-width: 1299.98px) {
+    font-size: 48px;
+    letter-spacing: 10px;
+  }
+  @media (max-width: 1099.98px) {
+    font-size: 42px;
+    letter-spacing: 8px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 36px;
+    letter-spacing: 5px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+}
+
+// stars setting
+.star-red-12 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #f110ba;
+}
+.star-blue-12 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #28d8f2;
+}
+.star-red-23 {
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  background-color: #f110ba;
+}
+.star-blue-50 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #28d8f2;
+}
+
+.pageup {
+	display: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 5%;
+  z-index: 9999;
+	border-radius: 50%;
+  background-color: rgba(255, 255, 255, .2);
+  cursor: pointer;
+  transition: all .8s ease-out;
+}
+.pageup .sticky {
+	display: block;
+	position: sticky;
+	float: right;
+	animation: fadeOut .4s linear;
+}
+.pageup__inner {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pageup svg {
+	width: 20px;
+	height: 20px;
+	path {
+		fill: #fff;
+	}
+}
