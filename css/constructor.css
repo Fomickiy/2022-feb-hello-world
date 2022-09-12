@@ -1015,7 +1015,11 @@ position: absolute; left:5px; top:10px;}
 @media screen and (max-width:460px){
  .top__content.top__content-constructor .top__title{
    font-size: 10vw;
- }
+}
+
+.top__img-front-front,.top__img-front-front-back{
+  object-fit: contain;
+}
  
 }
 @media screen and (max-width:380px) {
