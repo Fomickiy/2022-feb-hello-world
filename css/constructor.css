@@ -188,10 +188,10 @@
 
 .projectcreation__line {
   position: absolute;
-  top: 50%;
+  top: 69%;
   left: 0;
   height: 2px;
-  width: 100vw;
+  width: 130vw;
   background-color: rgba(0, 178, 224, .15);
   margin-left: -280px;
 }
@@ -199,7 +199,7 @@
 .projectcreation__line-items {
   position: absolute;
   top: -50px;
-  left: 291px;
+  left: 500px;
   display: flex;
   z-index: 0;
 }
@@ -268,7 +268,7 @@
 
 .projectcreation_bg-left-img {
   position: absolute;
-  top: -25%;
+  top: -106%;
   right: -30%;
   background-image: url(../img/status/blur-effect-left-side.png);
   background-position: center;
@@ -647,6 +647,7 @@
   .functionality__title {
     margin-bottom: 100px
   }
+  
 }
 
 @media(max-width:991.98px) {
@@ -677,6 +678,9 @@
   .functionality__slider-item {
     max-width: 50%
   }
+    .projectcreation__line-items{
+      left: 362px;
+    }
 }
 
 @media(max-width:992.98px) {
@@ -689,6 +693,7 @@
     padding: 0 30px
   }
 }
+
 
 .functionality__slider-item-title {
   font-size: 30px;
@@ -1087,6 +1092,124 @@ ul.tabs__conteiner-list {
       color: white;
       margin-top: 20px;
 }
+.projectcreation_block {}
+
+.projectcreation__numbers-title {}
+
+.numbers__article__overflow {}
+
+.number__article {
+  position: absolute;
+  z-index: -1;
+  font-weight: 700;
+  font-size: 120px;
+  background: #485090;
+  background: repeating-linear-gradient(to right, #485090 0%, #1e1e64 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 10px;
+  top: -55px;
+}
+
+.numbers-title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.numbers-title li {
+  display: flex;
+  flex: none;
+  width: 25%;
+}
+
+.numbers__article-one {}
+
+.numbers__article-two {}
+
+.numbers__article-three {}
+
+.numbers__article-fore {}
+
+.numbers-title li.numbers__article-five {
+  width: 33.3%;
+  margin-top: 80px;
+}
+
+.numbers-title li.numbers__article-six {
+  width: 33.3%;
+  margin-top: 80px;
+}
+
+.numbers-title li.numbers__article-seven {
+  width: 33.3%;
+  margin-top: 80px;
+}
+
+
+.numbers__article__item {
+  position: relative;
+  z-index: 5;
+  padding: 38px 90px 0 50px;
+}
+
+.number__article {}
+
+.numbers__article_text {
+  position: relative;
+  z-index: 6;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.bottom__numbers{
+  display: flex;
+  margin-left: 8%;
+}
+.projectcreation__numbers-title {
+  margin-top: 100px;
+  margin-bottom: 118px;
+}
+@media screen and (max-width:960px) {
+  ul.numbers-title {
+    overflow: auto;
+    padding-top: 50px;
+    position: relative;
+    flex-wrap: nowrap;
+    padding-bottom: 180px;
+    height: 340px;
+  }
+    .projectcreation__line {
+      top: 73%;
+    }
+.number__article{
+top:-31px;
+}
+  .numbers-title li {
+    width: 65vw;
+  }
+
+  .bottom__numbers {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .numbers-title li.numbers__article-five {
+    margin-left: 30vw;
+  }
+
+  .numbers-title li.numbers__article-five .numbers__article_text {
+    max-width: 350px;
+  }
+
+  .numbers-title li.numbers__article-five,
+  .numbers-title li.numbers__article-six,
+  .numbers-title li.numbers__article-seven {
+    width: 70vw;
+  }
+}
 
 @media screen and (max-width:1360px) {
   .direction__item-box {
@@ -1127,12 +1250,16 @@ ul.tabs__conteiner-list {
   }
 
   .projectcreation__line {
-    width: 120vw;
+    width: 129vw;
 
   }
 }
-
-
+.numbers-title {
+  margin: 57px -5px 20px 39px;
+}
+.bottom__numbers {
+  margin-left: 11%;
+}
 @media screen and (max-width:1440px) {
   .tariffs_paragrafs {
     position: absolute;
@@ -1169,7 +1296,7 @@ ul.tabs__conteiner-list {
   }
 
   .projectcreation__line {
-    width: 135vw;
+    width: 155vw;
   }
 }
 
@@ -1229,6 +1356,10 @@ ul.tabs__conteiner-list {
       width: 700px;
       height: 700px;
       background-size: contain;
+}
+.number__article {
+  top: -22px;
+  left: 19px
 }
 }
 
@@ -1333,7 +1464,6 @@ ul.tabs__conteiner-list {
 
   .projectcreation__line {
     width: 160vw;
-    display: none;
   }
 
   .projectcreation__row.row_bottom .projectcreation__col,
@@ -1348,12 +1478,24 @@ ul.tabs__conteiner-list {
 .direction__title {
   font-size: 5vw;
 }
+.numbers__article_text {
+  position: relative;
+  z-index: 6;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.top__item {
+  margin-bottom: 21px;
+}
 }
 @media screen and (max-width:460px){
   .top__img-front {
       top: -123px;
       
     }
+    .top__item {
+      margin-bottom: -120px;
+  }
 }
 @media screen and (max-width:460px) {
   .top__content.top__content-constructor .top__title {
@@ -1574,4 +1716,3 @@ ul.tabs__conteiner-list {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
