@@ -1171,16 +1171,21 @@ ul.tabs__conteiner-list {
 }
 @media screen and (max-width:960px) {
   ul.numbers-title {
-    overflow: auto;
+    overflow-x: auto;
     padding-top: 50px;
     position: relative;
     flex-wrap: nowrap;
     padding-bottom: 180px;
-    height: 340px;
+    height: 400px;
+    overflow-y: hidden;
   }
     .projectcreation__line {
-      top: 73%;
+      top: 67%;
     }
+        .projectcreation_block {
+          margin-left: -30px;
+          margin-right: -30px;
+        }
 .number__article{
 top:-31px;
 }
@@ -1193,7 +1198,7 @@ top:-31px;
     flex-wrap: nowrap;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 55px;
   }
 
   .numbers-title li.numbers__article-five {
@@ -1438,10 +1443,15 @@ top:-31px;
     font-size: 6vw;
   }
 }
-
+@media screen and (max-width: 640px) {
+.numbers-title li.numbers__article-five {
+  margin-left: 10vw;
+}
+}
 @media screen and (max-width:620px) {
   .direction__item-box {
     width: 50%;
+    width: 90vw;
   }
 
   .direction__item-box:nth-child(1),
@@ -1471,6 +1481,19 @@ top:-31px;
     flex: 0 0 100%;
   }
 }
+@media screen and (max-width: 560px){
+.numbers-title li.numbers__article-five,
+.numbers-title li.numbers__article-six,
+.numbers-title li.numbers__article-seven {
+  width: 360px;
+}
+.numbers-title li.numbers__article-five {
+  margin-left: 0;
+}
+.bottom__numbers{
+  bottom: 20px;
+}
+}
 @media screen and (max-width: 500px) {
 .functionality__title {
   font-size: 5vw;
@@ -1488,20 +1511,24 @@ top:-31px;
   margin-bottom: 21px;
 }
 }
+@media screen and (max-width: 480px) {
+.bottom__numbers {
+  bottom: 40px;
+}
+}
 @media screen and (max-width:460px){
   .top__img-front {
       top: -123px;
       
     }
-    .top__item {
-      margin-bottom: -120px;
   }
-}
 @media screen and (max-width:460px) {
   .top__content.top__content-constructor .top__title {
     font-size: 10vw;
   }
-
+.numbers-title li.numbers__article-two {
+  width: 420px;
+}
   .top__img-front-front,
   .top__img-front-front-back {
     object-fit: contain;
@@ -1511,9 +1538,18 @@ top:-31px;
   height: 350px;
   background-size: contain;
 }
+.top__item {
+  margin-bottom: -130px;
+}
+.top__img-back {
+  top: -70%;
+}
 }
 
 @media screen and (max-width:380px) {
+.numbers-title li {
+    width: 350px;
+  }
 
   .direction__item-box,
   .direction__item-box:nth-child(1),
@@ -1527,12 +1563,16 @@ top:-31px;
   .direction__square {
     max-width: 80%;
   }
+
 }
 
 @media screen and (max-width: 360px) {
   .tariffs_paragrafs {
     padding-left: 19px;
   }
+.projectcreation__line {
+      width: 204vw;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -1716,3 +1756,4 @@ top:-31px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
