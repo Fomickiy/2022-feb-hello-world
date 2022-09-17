@@ -437,7 +437,16 @@
   line-height: 23px;
   font-size: 14px;
 }
-
+.top__btn {
+  padding: 20px 30px
+}
+.btn.navigation__btn {
+  margin-left: 25px;
+  padding: 15px 15px 15px 15px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: rgb(0 0 0 / 56%) 0 22px 70px 4px;
+}
 .btn_slider-item a {
   padding: 13px 62px;
   border: 1px solid #eac1ed;
@@ -653,7 +662,7 @@
 @media(max-width:991.98px) {
   .functionality__title {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 80px
   }
 }
@@ -1108,7 +1117,7 @@ ul.tabs__conteiner-list {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   left: 10px;
-  top: -55px;
+  top: -45px;
 }
 
 .numbers-title {
@@ -1150,7 +1159,7 @@ ul.tabs__conteiner-list {
 .numbers__article__item {
   position: relative;
   z-index: 5;
-  padding: 38px 90px 0 50px;
+  padding: 38px 90px 25px 50px;
 }
 
 .number__article {}
@@ -1169,6 +1178,10 @@ ul.tabs__conteiner-list {
   margin-top: 100px;
   margin-bottom: 118px;
 }
+.images__swipe{
+  position: absolute;
+  margin-left: 400px;
+}
 @media screen and (max-width:960px) {
   ul.numbers-title {
     overflow-x: auto;
@@ -1180,7 +1193,7 @@ ul.tabs__conteiner-list {
     overflow-y: hidden;
   }
     .projectcreation__line {
-      top: 67%;
+      top: 68%;
     }
         .projectcreation_block {
           margin-left: -30px;
@@ -1198,7 +1211,8 @@ top:-31px;
     flex-wrap: nowrap;
     position: absolute;
     left: 0;
-    bottom: 55px;
+    bottom: 1px;
+    margin-left: 6%;
   }
 
   .numbers-title li.numbers__article-five {
@@ -1216,12 +1230,7 @@ top:-31px;
   }
 }
 
-@media screen and (max-width:1360px) {
-  .direction__item-box {
-    width: 20%;
-    margin-bottom: 10px;
-  }
-}
+
 
 .constructor__logo {
   position: absolute;
@@ -1235,7 +1244,9 @@ top:-31px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-
+@media screen and (min-width:960px){
+.images__swipe{display: none;}
+}
 @media screen and (max-width:1600px) {
   .projectcreation__line {
     width: 130vw;
@@ -1261,9 +1272,6 @@ top:-31px;
 }
 .numbers-title {
   margin: 57px -5px 20px 39px;
-}
-.bottom__numbers {
-  margin-left: 11%;
 }
 @media screen and (max-width:1440px) {
   .tariffs_paragrafs {
@@ -1296,13 +1304,16 @@ top:-31px;
 
 
 @media screen and (max-width:1280px) {
-  .direction__item-box {
-    width: 25%;
-  }
 
   .projectcreation__line {
     width: 155vw;
   }
+  .direction__item-box {
+      width: 33%;
+    }
+        .direction_list-section {
+          justify-content: center;
+        }
 }
 
 @media screen and (max-width:1440px) {
@@ -1314,9 +1325,16 @@ top:-31px;
     padding-left: 83px;
   }
 
-  .direction__item-box {
-    width: 14.2%;
+  
+  .advantage__items{
+    padding-left: 150px
   }
+    .advantage__item-text {
+      font-size: 21px;
+    }
+        .functionality__inner{
+          padding: 70px 30px;
+        }
 }
 
 @media screen and (max-width: 1360px) {
@@ -1333,7 +1351,6 @@ top:-31px;
     margin: 0 0 0 58px;
   }
 }
-
 @media screen and (max-width:1024px) {
   .projectcreation__row {
     flex-wrap: wrap;
@@ -1369,15 +1386,23 @@ top:-31px;
 }
 
 @media screen and (max-width:960px) {
+  
   .direction__item-box {
     width: 33.3%;
   }
 
   .projectcreation__title {
-    font-size: 5vw;
+    font-size: 4vw;
+    margin-top: 34px;
   }
+  .projectcreation__numbers-title{
+    margin-top: 55px;
+  }
+  
 }
-
+@media screen and (max-width:760px){
+  .advantage__items{padding-left: 0;}
+}
 @media screen and (max-width:630px) {
   .direction__item-box {
     width: 50%;
@@ -1409,7 +1434,7 @@ top:-31px;
   }
 
     .faq__tabs-overflow {
-      text-align: center;
+      text-align: left;
     }
 }
 
@@ -1442,6 +1467,9 @@ top:-31px;
     z-index: 10;
     font-size: 6vw;
   }
+    .images__swipe {
+      margin-left: 315px;
+    }
 }
 @media screen and (max-width: 640px) {
 .numbers-title li.numbers__article-five {
@@ -1515,7 +1543,11 @@ top:-31px;
 }
 @media screen and (max-width: 480px) {
 .bottom__numbers {
-  bottom: 40px;
+  bottom: 0;
+  margin-left: 40%;
+}
+.images__swipe {
+  margin-left: 239px;
 }
 }
 @media screen and (max-width:460px){
@@ -1523,6 +1555,9 @@ top:-31px;
       top: -123px;
       
     }
+        .functionality__inner {
+          padding: 70px 10px;
+        }
   }
 @media screen and (max-width:460px) {
   .top__content.top__content-constructor .top__title {
@@ -1549,7 +1584,11 @@ top:-31px;
 }
 
 @media screen and (max-width:380px) {
-.numbers-title li {
+.possibility__inner {
+    flex-flow: column;
+    margin-top: 80px;
+  }
+  .numbers-title li {
     width: 350px;
   }
 
@@ -1567,7 +1606,9 @@ top:-31px;
   .direction__square {
     max-width: 80%;
   }
-
+.functionality__title {
+  font-size: 15px;
+}
 }
 
 @media screen and (max-width: 360px) {
@@ -1578,8 +1619,43 @@ top:-31px;
       width: 204vw;
     }
 }
-
+@media screen and (max-width:380px){
+.top__img-front {
+    top: -126px;
+    width: 50%;
+    left: 180px;
+  }
+    .top__img-front-front-back {
+      width: 100px;
+      height: 100px;
+      margin-left: -88px;
+      z-index: 1;
+      margin-top: 18px;
+    }
+    .top__content.top__content-constructor{
+      margin-top: -100px;
+    }
+    .top__bg img{
+      top: -54%;
+      height: 180%;
+    }
+    .top__img-back{
+      top: -240%;
+      left: -20%;
+    }
+}
 @media screen and (max-width:360px) {
+  .top__img-back {
+      top: -677%;
+      left: -15%;
+    }
+  .top__inner {
+      padding-top: 128px;
+    }
+  .top__bg img {
+      top: -64%;
+      height: 180%;
+    }
   .top__img-front {
     margin-top: -69px;
   }
@@ -1607,7 +1683,14 @@ top:-31px;
     margin-bottom: 15px;
   }
 }
-
+@media screen and (max-width:330px){
+  .top__item {
+      margin-bottom: -150px;
+    }
+    .top__bg img {
+    top: -64%;
+}
+}
 @media screen and (max-width:320px) {
 
   .top__content.top__content-constructor .top__title {
@@ -1621,7 +1704,14 @@ top:-31px;
   .tariffs_paragrafs-p {
     margin-left: -24px;
   }
-
+}
+@media screen and (max-width:350px){
+  .bottom__numbers{
+    margin-left: 1%;
+  }
+    .images__swipe {
+      margin-left: 149px;
+    }
 }
 
 .container.conteiner__tarrifs {max-width: 100%;}

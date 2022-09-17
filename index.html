@@ -62,8 +62,8 @@
 								<option>ENG</option>
 								<option>ITA</option>
 							</select>
-              <button class="btn nav__btn">
-                <span class="btn-span nav__btn-span"> Вход | Регистрация </span>
+              <button class="btn navigation__btn">
+                <span class="btn-span navigation__btn-span"> Вход | Регистрация </span>
               </button>
             </div>
 
@@ -292,6 +292,9 @@ AR-проекта
                   </li>
                   </div>
                 </ul>
+                <div class="images__swipe">
+                      <img src="img/constructor/swipe.png" alt="swipe"> 
+                    </div>
                 <div class="projectcreation__line">
 							<div class="projectcreation__line-items">
 								<div class="projectcreation__line-item projectcreation__line-item-all-1">
@@ -992,7 +995,31 @@ AR-хостинг не включен в стоимость. </p>
             }, ]
         });
 
-    
+    $(".js-slider-functionality.js-slider-tariffs").slick({
+      dots: true,
+      slidesToShow: 6,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 1201.98,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 867.98,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 575.98,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
 
      
      
