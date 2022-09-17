@@ -1248,7 +1248,9 @@ top:-31px;
 .images__swipe{display: none;}
 }
 @media screen and (max-width:960px) {
+  
   .images__swipe {
+    padding-top: 15px;
       margin-left: 0;
       width: 100%;
       position: relative;
