@@ -1586,7 +1586,7 @@ top:-31px;
 @media screen and (max-width:380px) {
 .possibility__inner {
     flex-flow: column;
-    margin-top: 80px;
+    margin-top: 5px;
   }
   .numbers-title li {
     width: 350px;
